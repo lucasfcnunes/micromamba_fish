@@ -1,0 +1,8 @@
+name: ${COMPOSE_PROJECT_NAME}
+services:
+  image:
+    image: ${DOCKER_USER}/${COMPOSE_PROJECT_NAME}
+    build:
+      context: ./
+      args:
+        USER: ${USER}
